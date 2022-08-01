@@ -19,6 +19,7 @@ html{
 }
 
 body{
+
     font-size: 1.6rem;
     background: var(--bg-body);
     color: var(--text-color);
@@ -26,6 +27,7 @@ body{
 }
 
 .container-geral {
+    
     width: 98%;
     max-width: 900px;
     margin-inline: auto;
