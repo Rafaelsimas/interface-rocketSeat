@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --bg-body:black;
+    --text-color:lightgrey;
+    --bg-form:rgb(37, 37, 37);
+    --bg-button:rgba(137, 43, 226, 0.562);
+    --link-op:blueviolet;
+    --buton-link:rgb(46, 44, 44);
+}
+
+html{
+    font-size:62.5% ;
+}
+
+body{
+    font-size: 1.6rem;
+    background: var(--bg-body);
+    color: var(--text-color);
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 5.9rem;
+}
+
+.texto{
+    width: 100%;
+}
+
+.texto img {
+    width: 24rem;
+    margin-bottom: 7rem;
+}
+
+.container-geral{
+  /*   display: flex;
+    gap: 4rem;
+    background: red; */
+    width: 90%;
+    max-width: 900px;
+}
+
+.formulario{
+    width: 100%;
+    background: var(--bg-form);
+    border-radius: 8px;
+}
+
+form{
+    padding: 4rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+input {
+    background: var(--bg-body);
+    border: none;
+    border-radius: 8px;
+    padding: 3rem;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+
+
+.lembrar-senha{
+    padding: 0.9rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -2px;
+    margin-bottom: 30px;
+}
+
+.link-color{
+    color: var(--link-op);
+}
+button {
+    background: var(--bg-button);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+    border-radius: 8px;
+    padding: 3rem;
+    margin-bottom: 45px;
+}
+
+.divisor{
+    margin-top: 2rem;
+    border: 1px solid var(--bg-button);
+}
+
+.gitHub{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gitHub p{
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.button-github{
+    gap: 3rem;
+    border-radius: 8px;
+    color: var(--text-color);
+    padding: 1.5rem 5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    background: var(--buton-link);
+}
+
+
+.box-mail{
+    position: relative;
+}
+.box-senha{
+    position: relative;
+}
+
+ion-icon {
+    font-size: 2rem;
+    position: absolute;
+    left: 1rem;
+    top: 1.9rem;
+    padding: 0.2rem;
+}
