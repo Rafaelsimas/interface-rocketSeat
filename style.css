@@ -12,6 +12,10 @@
     --bg-button:rgba(137, 43, 226, 0.562);
     --link-op:blueviolet;
     --buton-link:rgb(46, 44, 44);
+    --name-avatar:rgba(163, 163, 163, 0.671);
+    --bg-linear-menu:rgba(137, 43, 226, 0.733);
+    --footer-menu:rgba(137, 43, 226, 0.356);
+    
 }
 
 html{
@@ -210,4 +214,59 @@ button{
         border-radius: 8px;
         width: 100%;
     }
+}
+
+/* ===================APLICAÇÃO============= */
+.app{
+display: flex;
+}
+
+.info-usuario img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 5px;
+    border: 6px solid var(--text-color);
+    margin-bottom: 2.5rem;
+}
+
+span{
+    color: var(--name-avatar);
+}
+
+.date{
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-esquedo {
+    position: relative;
+    width: 20%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, var(--bg-form), var(--bg-linear-menu));
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu-direito {
+    width: calc(100% - 20%);
+    height: 937px;
+    background: var(--bg-body);
+}
+
+.info-usuario {
+    margin-top: 8rem;
+}
+
+.footer-menu{
+    bottom: 0;
+    position: absolute;
+    background: var(--footer-menu);
+    width: 100%;
+    padding: 1rem;
+}
+.footer-menu a{
+    color: var(--text-color); 
 }
