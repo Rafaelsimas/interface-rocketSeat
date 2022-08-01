@@ -23,7 +23,7 @@ html{
 }
 
 body{
-
+    overflow: hidden;
     font-size: 1.6rem;
     background: var(--bg-body);
     color: var(--text-color);
@@ -222,8 +222,8 @@ display: flex;
 }
 
 .info-usuario img{
-    width: 250px;
-    height: 250px;
+    width: 20.5rem;
+    height: 20.5rem;
     object-fit: cover;
     border-radius: 50%;
     padding: 5px;
@@ -250,10 +250,72 @@ span{
 
 }
 
-.menu-direito {
+.menu-direito { /*Container*/
     width: calc(100% - 20%);
     height: 937px;
     background: var(--bg-body);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.menu-direito .videos{
+    height: 20rem;
+    width: 95%;
+
+    display: flex;
+
+    overflow: scroll;
+    overflow-y: hidden;
+
+    margin-bottom: 0.9rem;
+    border: 2px solid var(--bg-button);
+    border-radius: 15px;
+    border-bottom: none;
+    border-top: none;
+
+    margin-top: -20rem;
+
+}
+/*Estilizando as Barras*/
+
+.videos::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .videos::-webkit-scrollbar-track {
+            /* color of the tracking area */
+  }
+  
+  .videos::-webkit-scrollbar-thumb {
+        /* color of the scroll thumb */
+          /* roundness of the scroll thumb */
+     /* creates padding around scroll thumb */
+  }
+
+.menu-direito .videos img{
+    width: 20.8rem;
+    height: 15rem;
+    object-fit: cover;
+    margin: 1.9rem;
+}
+
+.menu-direito .exibir{
+    height: 50rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-direito .exibir .tela-video{
+    width: 95%;
+    height: 54vh;
+    margin-top: -5rem;
 }
 
 .info-usuario {
@@ -270,3 +332,5 @@ span{
 .footer-menu a{
     color: var(--text-color); 
 }
+
+
